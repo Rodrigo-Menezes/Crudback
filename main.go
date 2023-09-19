@@ -61,7 +61,7 @@ func main() {
 	r.Use(corsHandler.Handler)
 
 	// Defina suas rotas aqui usando o roteador "r"
-	r.HandleFunc("/create", createItem).Methods("POST")
+	r.HandleFunc("create", createItem).Methods("POST")
 	r.HandleFunc("/read", readItems).Methods("GET")
 	r.HandleFunc("/update", updateItem).Methods("PUT")
 	r.HandleFunc("/delete", deleteItem).Methods("DELETE")
