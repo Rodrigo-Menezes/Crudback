@@ -52,7 +52,7 @@ func main() {
 
 	// Configuração do CORS
 	corsHandler := cors.New(cors.Options{
-		AllowedOrigins: []string{"https://crud-front-delta.vercel.app/"}, // Altere isso para o domínio do seu aplicativo React em produção
+		AllowedOrigins: []string{"https://crud-front-delta.vercel.app/create"}, // Altere isso para o domínio do seu aplicativo React em produção
 		AllowedMethods: []string{"GET", "POST", "PUT", "DELETE"},
 		AllowedHeaders: []string{"Content-Type"},
 	})
@@ -61,7 +61,7 @@ func main() {
 	r.Use(corsHandler.Handler)
 
 	// Defina suas rotas aqui usando o roteador "r"
-	r.HandleFunc("create", createItem).Methods("POST")
+	r.HandleFunc("/create", createItem).Methods("POST")
 	r.HandleFunc("/read", readItems).Methods("GET")
 	r.HandleFunc("/update", updateItem).Methods("PUT")
 	r.HandleFunc("/delete", deleteItem).Methods("DELETE")
