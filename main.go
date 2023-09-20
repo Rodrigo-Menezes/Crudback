@@ -52,7 +52,7 @@ func main() {
 
 	// Configuração do CORS
 	corsHandler := cors.New(cors.Options{
-		AllowedOrigins: []string{"crud-front-delta.vercel.app"}, // Altere isso para o domínio do seu aplicativo React em produção
+		AllowedOrigins: []string{"https://crud-front-delta.vercel.app"}, // Altere isso para o domínio do seu aplicativo React em produção
 		AllowedMethods: []string{"GET", "POST", "PUT", "DELETE"},
 		AllowedHeaders: []string{"Content-Type"},
 	})
