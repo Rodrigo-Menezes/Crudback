@@ -52,8 +52,7 @@ func main() {
 
 	// Configuração do CORS
 	corsHandler := cors.New(cors.Options{
-		AllowedOrigins: []string{"crud-front-gth4yfkji-rodrigo-menezes1.vercel.app",
-			"http://localhost:3000"}, // Altere isso para o domínio do seu aplicativo React em produção
+		AllowedOrigins: []string{"crud-front-gth4yfkji-rodrigo-menezes1.vercel.app"}, // Altere isso para o domínio do seu aplicativo React em produção
 		AllowedMethods: []string{"GET", "POST", "PUT", "DELETE"},
 		AllowedHeaders: []string{"Content-Type"},
 	})
