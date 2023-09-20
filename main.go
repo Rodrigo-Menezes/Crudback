@@ -20,6 +20,7 @@ var (
 )
 
 type Item struct {
+	ID       string `json:"id"`
 	Nome     string `json:"nome"`
 	Telefone int    `json:"telefone"`
 	Endereco string `json:"endereco"`
